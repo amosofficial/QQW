@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: RED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.converter {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.converter input, .converter select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.converter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.converter button:hover {
+    background-color: #218838;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and larger devices */
+@media (min-width: 768px) {
+    .converter {
+        width: 400px;
+    }
+}
+
+/* Desktops and larger devices */
+@media (min-width: 1024px) {
+    .converter {
+        width: 500px;
+    }
+}
+
+/* Smaller devices (phones) */
+@media (max-width: 767px) {
+    .converter {
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .converter input, .converter select {
+        width: calc(100% - 40px);
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .converter button {
+        padding: 8px 16px;
+    }
+}
